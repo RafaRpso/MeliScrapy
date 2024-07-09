@@ -63,7 +63,7 @@ class MlSpider(scrapy.Spider):
             if cupom["haveCupom"]:
                 cupom["cupom"] = i.xpath(
                     './/div[@class="promotion-item__coupon-div"]/span/text()').get()
-
+            
             yield {
                 "price": price,
                 "title": title,
