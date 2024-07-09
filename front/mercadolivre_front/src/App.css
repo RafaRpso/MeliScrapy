@@ -1,0 +1,37 @@
+/* styles.css */
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.navbar-container {
+  background-color: #313149;
+  color: #fff;
+  padding: 30px;
+  height: 2vh;
+
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-item a:hover {
+  color: #ffd700; /* Cor ao passar o mouse sobre o link */
+}

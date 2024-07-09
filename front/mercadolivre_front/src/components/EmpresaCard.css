@@ -1,0 +1,205 @@
+.empresa-card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85vw;
+    height: 70vh;
+    max-height: 70vh;
+    max-width: 90%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    overflow: auto;
+}
+
+a {
+ /* tirar todo o padrao, margem etc */
+    color: inherit;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+ 
+}
+.fechar-card {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #888;
+}
+
+.fechar-card:hover {
+    color: #333;
+}
+
+.empresa-card h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.empresa-card h2 {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.empresa-card div {
+    margin-bottom: 20px;
+}
+
+.produto-card {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 30%;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /*limitar a tres elementos por row */
+    max-width: 100%;
+    height: 100vh;
+
+
+    /* ativar scroll */
+    max-height: 5px;
+    overflow-y: auto;
+
+
+}
+
+.image-product {
+    width: 35%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+
+}
+
+.kpis {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 30%;
+    
+}
+
+.kpiCard {
+    border: 1px solid #eee;
+    border-radius: 8px;
+
+    margin-bottom: 10px;
+    width: 33%;
+}
+
+.produto-card h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.produto-card p {
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.produto-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Adicione mais estilos conforme necessário */
+/* escurecer tudo que está ATRÁS do card, mas que não é elemento do card e sim da página */
+
+.escurecer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-top: 20px;
+    overflow-y: auto;
+
+}
+
+/* Estilos para a tabela de produtos */
+.table {
+    width: 100%;
+    height: 50vh;
+    max-height: 600px;
+    /* Ajuste a altura máxima conforme necessário */
+    overflow-y: auto;
+}
+
+.tabela-produtos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabela-produtos th,
+.tabela-produtos td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.tabela-produtos th {
+    background-color: #f2f2f2;
+}
+
+.tabela-produtos tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+.image-product {
+    max-width: 50px;
+    /* Ajuste o tamanho máximo conforme necessário */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.cupom { 
+ /* centralizar
+ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%; 
+    margin-top: 20px;
+}
+
+.cupom-lista {
+    display: flex;
+    width: 20vw;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    width: 40%;
+}   
+
+.cupom-card { 
+
+    border: 2px solid rgb(30, 68, 192);
+    padding: 2px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #d1e0ff;
+}

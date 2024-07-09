@@ -1,0 +1,110 @@
+/* OfertaDoDia.css */
+
+.App {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.oferta-do-dia-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+.rank-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.google-chart-div {
+    border: 2px solid black;
+    position: relative;
+    overflow-y: auto;
+    max-height: 60vh;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.enterprises_first_page {
+    display: flex;
+    /* flexbox, 4x4 */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* Modificado para space-evenly */
+    align-items: center;
+}
+
+
+.enterprises_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    width: 30%;
+    height: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+.promotions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.promotion-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    min-width: 250px;
+    max-width: 300px;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.imagem-promocao {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.promotion-price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.promotion-price h3 {
+    margin-right: 10px;
+}
+
+.promotion-price s {
+    color: #888;
+    text-decoration: line-through;
+}
+
+.promotion-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+/* Outros estilos podem ser adicionados conforme necessário */
